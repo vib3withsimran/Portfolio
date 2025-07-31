@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- stars effect  -->
+    <div id="particles-js"></div>
+
+    <!-- nav bar -->
+        <div  data-aos="fade-down" class="button-container">
+                <a href="#indexPage" class="button" >
+                    <i class="fa-solid fa-house"></i>
+                    <p class="pages">Home</p>
+                </a>
+                <a href="#EducationPage" class="button">
+                    <i class="fa-solid fa-school"></i>
+                    <p class="pages">Education</p>
+                </a>
+                <a href="#ProjectsPage" class="button ">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <p class="pages">Projects</p>
+                </a>
+                <a href="#SkillsPage" class="button ">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <p class="pages">Skills</p>
+                </a>
+                <a href="#AcheivementPage" class="button ">
+                    <i class="fa-solid fa-trophy"></i>
+                    <p class="pages">Achievements</p>
+                </a>
+                <a href="#ContactPage" class="button ">
+                    <i class="fa-regular fa-address-book"></i>
+                    <p class="pages">Contact</p>
+                </a>
+        </div>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    
+    <!-- index page -->
+    <section id="indexPage">
+        <div class="indexpage">
+            <!-- for written part -->
+            <div class="written-part">
+                <div data-aos="fade-right" class="info">
+                    <div id="circles-wrapper">
+                        <div id="circles">
+                            <div id="circle1"></div> <!-- for image  -->
+                            <div id="circle2"></div>
+                            <div id="circle3"></div>
+                            <div id="circle4"></div>
+                            <div id="circle5"></div>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p id="greeting" >Hello, I'm Simran. </p>
+                        <span>A </span>
+                        <span id="typed-text"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- for robot part -->
+            <div class="robot-part">
+                <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+                <div class="robot">
+                    <spline-viewer data-aos="fade-left" url="https://prod.spline.design/WInIUXyei7UvBTb6/scene.splinecode"></spline-viewer>
+                </div>
+            </div>
+        </div>
+        <div class="aboutme" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <div>
+                <h1>About me</h1>
+            </div>
+            <div>
+                <p>Hello! I'm a 2nd-year B.Tech CSE student with a deep enthusiasm for software development. My joy comes from diving into complex challenges, building new things from the ground up, and meticulously designing beautiful interfaces. I'm a dedicated and rapid learner who prioritizes smart, efficient approaches, and I'm eager to explore diverse opportunities to grow and contribute.</p>
+            </div>
+            
+        </div>
+        
+    </section>
+    
+
+    <!-- Education Section -->
+    <section id="EducationPage" >
+        <span class="headings" data-aos="fade-up" data-aos-anchor-placement="top-center">Education</span>
+        <!-- heading -->
+        <h1 data-aos="fade-up" data-aos-anchor-placement="top-center">Academics</h1>
+        <div class="cards">
+            <div class="flip-card"  data-aos="fade-right" data-aos-anchor-placement="top-center">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="heading"><h2>Senior Secondary School</h2></div>
+                        <div class="schldetails">
+                            <p>Name: Dr. B. R. Ambedkar Schools of Specialised Excellence</p>
+                            <p>Board: DBSE(Delhi Board of School Education)</p>
+                            <p>Class XII</p>
+                                <ul><li>Stream: PCM </li>
+                                    <li>Percentage- 87% </li>
+                                </ul>
+                        </div>
+                        <div class="bottomline">
+                                <p>(Click the card to see the image)</p>
+                            </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="heading"> <h2>Graduation</h2></div>
+                        <div class="schldetails">
+                            <p>Name: Dr. Akhilesh Das Gupta Institute of Professional Studies  (Formely Known as, NIEC, Northern Indian Engineering College )</p>
+                            <p>Board: GGSIPU( Guru Gobind Singh Indraprastha University) </p>
+                            <p>Course: B.Tech ( Bachelors of technology), <br> CSE (computer science and engineering )</p>
+                            <p>
+                                1st year
+                            </p>
+                                <ul><li>CGPA - 9.6</li></ul>
+                        </div>
+                        <div class="bottomline2">(Click the card to see the image)</div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="img2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="ProjectsPage">
+        
+    </section>
+
+    <!-- Experience Section -->
+    <section id="AcheivementPage">
+        <span class="headings" data-aos="fade-up" data-aos-anchor-placement="top-center">Achievements</span>
+        <h2 data-aos="fade-up" data-aos-anchor-placement="top-center" style="padding-top: 20px;">Scholarships</h2>
+        <div class="scholars">
+            <div data-aos="fade-up"
+     data-aos-anchor-placement="top-center" class="shecodes">
+                <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="heading">
+                    <div class="logo"></div>
+                    <h1>SheCodes Scholar '25 - Delac Foundation</h1>
+                </div>
+                <div class="content">
+                    <div  data-aos-anchor-placement="bottom-bottom" data-aos="fade-right" class="info1">
+                        <ul>
+                            <li><p>Awarded a full scholarship for demonstrating initiative and commitment to learning modern web development tools and concepts.</p></li>
+                            <li><p> Selected among global applicants for dedication to advancing technical skills and contributing to the tech community.</p></li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" class="certificate">
+                        <a href="#">Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" class="shefi">
+                <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="heading">
+                    <div class="logo"></div>
+                    <h1>SheFi Scholar – Season 14</h1>
+                </div>
+                <div class="content">
+                    <div  data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" class="info">
+                        <ul>
+                            <li><p>Earned a competitive scholarship to join SheFi, recognizing potential to contribute to Web3 innovation and community building.</p></li>
+                            <li><p>Participating in a global program designed to expand knowledge, professional network, and real-world opportunities in emerging technologies.</p></li>
+                        </ul>
+                    </div>
+                    <div data-aos="fade-left" data-aos-anchor-placement="bottom-bottom"class="certificate">
+                        <a href="#">Certificate</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>    
+
+    <!-- Contact Section -->
+    <section id="ContactPage">
+            <!-- heading -->
+        <h1 data-aos="fade-up"data-aos-anchor-placement="top-center">Let's Connect!</h1>
+        <!-- contact us icons -->
+        <div data-aos="fade-down" data-aos-anchor-placement="top-center" class="icons">
+            <a href="https://www.linkedin.com/in/mssimran/" style="--color: #0072b1">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/vib3with.simran/" style="--color: #E1360C">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRrmRRXWCrqDSdtPVWfCsVqxrWXJxLGmlbqlssXXlWpVnFTHStSMLCZzqKvWVNsrRKnPkxV" style="--color: #FF0050">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com/vib3withsimran" style="--color: #4267B2">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <!-- outro -->
+        <p class="contact-subheading">Feel free to reach out via any platform above!</p>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="index.js"></script>    
+</body>
+</html>

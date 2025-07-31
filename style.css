@@ -1,0 +1,624 @@
+body {
+    background-color: #091F2C;
+}
+body, html {
+    overflow-x: hidden; /* Prevents scrolling */
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind everything */
+  background-color: #091F2C; /* Your current background */
+}
+
+/* nav bar styling */
+/* rgba(255, 90, 145, 1) */
+.button-container {
+    display: flex;
+    background-color: #b5318b;
+    height: 40px;
+    width: 98%;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: fixed;
+    top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+        rgba(252, 88, 156, 0.5) 5px 10px 15px;
+        z-index: 10;  
+}
+a{
+    text-decoration-line: none;
+    font-size: 13px;
+}
+.button {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    mix-blend-mode: color-dodge;
+    transition: all 0.3s ease-in-out;
+}
+.pages{
+    padding-left: 5px;
+}
+.button:hover {
+    transform: translateY(-5px);
+}
+.icon {
+    font-size: 20px;
+}
+
+/* responsive nav bar */
+.menu-btn{
+    display: none;
+    cursor: pointer;
+}
+
+
+/* scroll bar adjustments */
+/* scroll barr  */
+/* Works on Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #091F2C;  /* dark card color */
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #091F2C;  /* your navbar color */
+  border-radius: 5px;
+  border: 2% solid #091F2C; /* matches background */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d2634;  /* lighter blue on hover */
+}
+
+/* index page styling */
+.indexpage{
+  height:70vh;
+    width: 100vw;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.written-part{
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.robot-part{
+  width: 70%;
+}
+
+.text{
+    font-size: x-large;
+    color: #f8ebeb;
+    padding-top: 20%;
+    margin-left: 5%;
+    width:225px
+}
+
+#circles-wrapper {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+#circles {
+  position: relative;
+  width: 35vw;
+  height: 35vw;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+#circles div {
+  position: absolute;
+  border-radius: 35%;
+  top: 80%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/* Individual circle sizes and animations */
+#circle1 {
+  width: 90%;
+  height: 90%;
+  background-color: aliceblue;
+  background-image: url(pfp.jpg);
+  background-size: 140%;
+  background-position: 50% 79%;
+  z-index: 5;
+}
+
+#circle2 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e024a4;
+  animation: rotate 4s infinite ease-out;
+  z-index: 4;
+}
+
+#circle3 {
+  width: 102%;
+  height: 102%;
+  border: 1px solid #e024a4;
+  animation: rotate 3.5s infinite ease-in reverse;
+  z-index: 3;
+}
+
+#circle4 {
+  width: 104%;
+  height: 104%;
+  border: 1px solid rgb(233, 156, 12);
+  animation: rotate 4.2s infinite ease-in-out alternate-reverse;
+  z-index: 2;
+}
+
+#circle5 {
+  width: 103%;
+  height: 103%;
+  border: 1px solid rgb(233, 156, 12);
+  animation: rotate 3.2s infinite ease-in-out alternate-reverse;
+  z-index: 1;
+}
+
+/* rotating criclers */
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.robot {
+    scale:0.5;
+    z-index: 5;
+}
+
+/* headings of each page */
+.headings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: #f8ebeb 0px 0px 10px;
+}
+
+.aboutme div{
+  padding: 10px;
+}
+
+.aboutme h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+.aboutme p{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    word-spacing: 0.1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: rgba(29, 29, 29, 0.35) 0px 5px 15px,
+        rgba(234, 126, 171, 0.5) 5px 10px 15px;
+}
+
+/* education page */
+#EducationPage{
+  padding-top: 40px;
+  height: auto;
+  width: 100%;
+}
+
+#EducationPage h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+}
+#EducationPage h2{
+    display: flex;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+}
+#EducationPage p{
+    margin-left: 15px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.img{
+    height: 300px;
+    width: 400px;
+    background-image: url(school.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    margin-top: 25px;
+}
+.img2{
+    height: 300px;
+    width: 400px;
+    background-image: url(clg.webp);
+    background-size: cover;
+    background-position: 50% 30%;
+    margin-top: 25px;
+}
+.flip-card-front, .flip-card-back{
+    height: 350px;
+    width: 400px;
+    border-radius: 15px;
+    border: #dfd5dc 2px solid;
+    background-color: #02131c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+}
+.flip-card {
+  width: 400px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 20px;
+  cursor: pointer;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+.flip-card-back {
+  transform: rotateY(180deg); /* Back side starts flipped */
+}
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg); /* Rotates to show back side */
+  background: #02131c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* bottom lines  */
+.bottomline{
+    font-size: x-small;
+    justify-content: center;
+    margin-top: 60px;
+}
+.bottomline2{
+    font-size: x-small;
+    justify-content: center;
+}
+
+
+/* achievments page */
+#AcheivementPage{
+    padding-top: 40px;
+    height: auto;
+    width: 100%;
+}
+#AcheivementPage h2{
+    display: flex;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    justify-content: center;
+}
+/* scholarship segment  */
+
+/* scholars */
+.scholars{
+  color: whitesmoke;
+  align-items: center;
+}
+.scholars a{
+  text-decoration: none;
+  color: white;
+}
+.shecodes , .shefi{
+  height: auto;
+  width: 90%;
+  margin-left:5%;
+  border: #e840b3 1px solid;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: #041a27;
+  text-align: left;
+}
+.shecodes .logo{
+  width:100px;
+  height: 35px;
+  background-image: url(shecodes.jpeg);
+  background-size: 235px 100px;
+  background-position: 50% 70%;
+  border-radius: 10px ;
+  margin:10px;
+}
+.shefi .logo{
+  width:100px;
+  height: 35px;
+  background-image: url(shefi.png);
+  background-size: 100px 100px;
+  background-position: 30% 40%;
+  border-radius: 10px ;
+  margin:10px;
+}
+.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.certificate{
+  height: 30px;
+  width: 100px;
+  border: #e15fb8 1px solid;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.certificate a{
+  padding: 20px 20px 20px 20px;
+  align-items: center;
+}
+
+/* contact page styling */
+/* heading */
+#ContactPage{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 0;
+    height: 85vh;
+    width: 100%;
+}
+#ContactPage h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-reflect: below 2px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));
+}
+#ContactPage h1:hover{
+    background: var(--color);
+    color: #3d3d3d;
+    box-shadow: 0 0 5px var(--color);
+}
+/* icons */
+.icons{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;   
+}
+#ContactPage a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 2.5em;
+    -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+#ContactPage a:hover{
+    background: var(--color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--color), 0 0 25px var(--color), 0 0 50px var(--color), 0 0 200px var(--color);
+}
+/* outro */
+#ContactPage p{
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+    color: white;
+}
+
+
+
+
+/* responsive web  */
+@media only screen and (max-width: 800px) {
+  .button-container {
+        flex-direction: column;
+        height: 40vh;
+        width: 100%;
+        justify-content: center;
+        background-color: #b5318b;
+        opacity: 0.8;
+        transition: all 0.3s ease-in-out;
+        margin-top: -900px;
+        z-index: 5;
+    }
+    .menu-btn {
+        display: block;
+        position: fixed;
+        top: 3%;
+        right: 5%;
+        scale: 1.5;
+        z-index: 10;
+        mix-blend-mode:lighten;
+        color: whitesmoke;
+    }
+    .menu-btn:hover{
+        transform: scale(1.1);
+        transition: all 0.3s  ease-in-out;
+    }
+    .mobile-screen{
+        margin-top: 0px;
+    }
+    .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    #indexPage{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 70vh;
+      height: auto; /* Let height be automatic */
+      align-items: center; /* Horizontally centers the content */
+      justify-content: center;
+    }
+    .written-part {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #circles-wrapper {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        scale: 1.4;
+        margin-bottom: 20px;
+        margin-right: 75%;
+    }
+    .text {
+        font-size: 1.2rem;
+        scale:1.2;
+        padding-top: 100px;
+    }
+    
+    .robot-part {
+      width: 100%;       /* Takes up the full screen width */
+      height: 45vh;      /* Give it a set height */
+      overflow: hidden;  /* This is CRUCIAL: it clips the overflowing part of the robot */
+      
+      /* Use flexbox to center the scaled-down robot inside this viewport */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  /* 2. This is the container we will scale */
+  .robot {
+      /* Give it an explicit, large size, wider than a mobile screen */
+      width: 900px;
+      height: 800px;
+
+      /* * THE KEY: Scale the entire large container down.
+      * Adjust the scale value (e.g., 0.4, 0.45, 0.55) until the robot fits perfectly.
+      */
+      transform: scale(0.6);
+
+      /* Remove any margins */
+      margin: 0;
+  }
+
+
+  /* education page responsive */
+  
+    .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    background: #091F2C;
+    }
+    #ContactPage{
+    height: 70vh;
+    width: 100%;
+    }
+    .cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin: 0 auto;
+    width: 100%;
+    }
+    .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .schldetails{
+      margin: auto 20px;
+    }
+    .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    } 
+    .certificate{
+      margin-left: 40%;
+      margin-bottom: 20px;
+    }
+}
