@@ -341,11 +341,12 @@ a{
 .bottomline{
     font-size: x-small;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 55px;
 }
 .bottomline2{
     font-size: x-small;
     justify-content: center;
+    margin-bottom: 5px;
 }
 
 
