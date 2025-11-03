@@ -477,6 +477,138 @@ a{
   border-radius: 10px;
   transition: width 1s ease;
 }
+/* responsive desgin for skills section */
+/* Responsive Design for Skills Section */
+
+/* ---------- Large Tablets (max-width: 1024px) ---------- */
+@media (max-width: 1024px) {
+  #SkillsPage {
+    padding: 60px 6%;
+  }
+
+  #SkillsPage h1 {
+    font-size: 1.8rem;
+  }
+
+  .skills-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+  }
+
+  .Softskill span {
+    width: 30%;
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------- Tablets (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+  #SkillsPage {
+    padding: 50px 5%;
+  }
+
+  #SkillsPage h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .tabs,
+  .Stabs {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .tab,
+  .stab {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+
+  .skills-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill span {
+    font-size: 0.95rem;
+  }
+
+  .Softskill {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Softskill span {
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+  }
+
+  .Soft-progress-bar {
+    width: 100%;
+  }
+}
+
+/* ---------- Mobile Devices (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+  #SkillsPage {
+    padding: 40px 4%;
+  }
+
+  #SkillsPage h1 {
+    font-size: 1.4rem;
+  }
+
+  .tabs,
+  .Stabs {
+    gap: 10px;
+  }
+
+  .tab,
+  .stab {
+    font-size: 0.9rem;
+  }
+
+  .skills-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .skill span {
+    font-size: 0.9rem;
+  }
+
+  .Softskill span {
+    font-size: 0.9rem;
+  }
+
+  .progress-bar,
+  .Soft-progress-bar {
+    height: 5px;
+  }
+}
+
+/* ---------- Small Mobile Devices (max-width: 360px) ---------- */
+@media (max-width: 360px) {
+  #SkillsPage {
+    padding: 30px 3%;
+  }
+
+  #SkillsPage h1 {
+    font-size: 1.2rem;
+  }
+
+  .tab,
+  .stab {
+    font-size: 0.85rem;
+  }
+
+  .skill span,
+  .Softskill span {
+    font-size: 0.85rem;
+  }
+}
 
 
 /* achievments page */
@@ -673,6 +805,7 @@ a{
       height: auto; /* Let height be automatic */
       align-items: center; /* Horizontally centers the content */
       justify-content: center;
+      overflow-y: hidden;
     }
     .written-part {
         width: 100%;
