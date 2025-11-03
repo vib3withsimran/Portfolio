@@ -4,6 +4,7 @@ body {
 body, html {
     overflow-x: hidden; /* Prevents scrolling */
 }
+
 #particles-js {
   position: fixed;
   top: 0;
@@ -349,6 +350,134 @@ a{
     margin-bottom: 5px;
 }
 
+/* skills page */
+#SkillsPage{
+  padding: 60px 10%;
+  color: #fff;
+  height: auto;
+}
+#SkillsPage h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#SkillsPage h2{
+    display: flex;
+    color: white;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #1e2a3a;
+  margin-bottom: 30px;
+}
+.tab {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 10px 0;
+  position: relative;
+  transition: color 0.3s;
+}
+.tab.active {
+  color: #19a2fe;
+}
+.tab.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00b3ff,  #fa07f2);
+  border-radius: 2px;
+}
+.Stabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 1px solid #1e2a3a;
+  margin-bottom: 30px;
+}
+.stab {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 10px 0;
+  position: relative;
+  transition: color 0.3s;
+}
+.stab.active {
+  color: #19a2fe;
+}
+.stab.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00b3ff,  #fa07f2);
+  border-radius: 2px;
+}
+.skills-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 60px;
+}
+.skills-content {
+  display: flex;
+  gap: 20px 60px;
+}
+.skill span {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.Softskill{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Softskill span{
+  font-weight: 500;
+  width: 20%;
+}
+
+.Soft-progress-bar {
+  background: #1a2636;
+  height: 6px;
+  width: 75%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-bar {
+  background: #1a2636;
+  height: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress {
+  background: linear-gradient(90deg, #fa07f2, #00b3ff);
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+
 
 /* achievments page */
 #AcheivementPage{
@@ -423,17 +552,22 @@ a{
   border: #e15fb8 1px solid;
   border-radius: 10px;
   margin-right: 20px;
+  background-color:#02131c;
 }
 .certificate a{
   padding: 20px 20px 20px 20px;
   align-items: center;
+}
+.certificate:hover a{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* contact page styling */
 /* heading */
 #ContactPage{
     padding-top: 70px;
-    padding-bottom: 35px;
+    padding-bottom: 10px;
     margin-top: 0;
     height: auto;
     width: 100%;
